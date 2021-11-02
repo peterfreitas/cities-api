@@ -1,6 +1,5 @@
 package com.github.peteroliveirafreitas.citiesapi.countries;
 
-import com.github.peteroliveirafreitas.citiesapi.countries.Country;
 import com.github.peteroliveirafreitas.citiesapi.countries.repository.CountryRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

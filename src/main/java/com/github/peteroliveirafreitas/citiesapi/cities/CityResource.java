@@ -16,7 +16,7 @@ public class CityResource {
     public CityResource(final CityRepository repository) {
         this.repository = repository;
     }
-    
+
     @GetMapping
     public Page<City> cities(final Pageable page) {
         return repository.findAll(page);

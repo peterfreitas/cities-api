@@ -1,20 +1,21 @@
 package com.github.peteroliveirafreitas.citiesapi.cities;
 
-import java.io.Serializable;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import org.hibernate.HibernateException;
 import org.hibernate.engine.spi.SharedSessionContractImplementor;
 import org.hibernate.usertype.UserType;
 import org.postgresql.geometric.PGpoint;
 import org.springframework.data.geo.Point;
 
+import java.io.Serializable;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 public class PointType implements UserType {
 
     @Override
     public int[] sqlTypes() {
-        return new int[] {java.sql.Types.OTHER};
+        return new int[]{java.sql.Types.OTHER};
     }
 
     @Override
